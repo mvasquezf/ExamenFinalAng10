@@ -1,1 +1,8 @@
-<app-curso [curso]="listCursoDestacado" [coverWitdh]="300"></app-curso>
+<span class="border">    
+    <div style="text-align: center;">
+        <h1 class="display-3">CURSOS DESTACADOS</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <app-curso *ngFor="let curD of listCursoDestacado" [curso]="curD" [coverWitdh]="300"></app-curso>
+    </div>
+</span>

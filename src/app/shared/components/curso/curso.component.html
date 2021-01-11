@@ -1,1 +1,14 @@
-<p>curso works!</p>
+<div class="col">
+    <div class="card h-100">
+        <img src="{{ curso.image }}" class="card-img-top" alt="..." />
+        <div class="card-body">
+            <h5 class="card-title">{{ curso.name }}</h5>
+            <p class="card-text">
+                {{ curso.summary }}
+            </p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">{{ curso.duration }} SEMANAS</small>
+        </div>
+    </div>
+</div>

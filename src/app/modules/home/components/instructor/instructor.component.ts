@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { IInstructor } from '../../interfaces/instructor';
 
 @Component({
   selector: 'app-instructor',
@@ -7,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class InstructorComponent implements OnInit {
 
-  @Input() instructor: any[] = [];
+  @Input() instructor: IInstructor;
   @Input() coverWitdh: number;
 
   constructor() { }

@@ -1,1 +1,9 @@
-<p>curso-page works!</p>
+<br>
+<div style="align-items: center; width: 100%;" class="btn-group">
+    <button type="button" class="btn btn-danger btn-sm col-xs-2" (click)="clickTodasCat()">TODOS LOS CURSOS</button>
+    <button type="button" class="btn btn-primary btn-sm col-xs-2" (click)="clickCatDiseno()">DISEÑO</button>
+    <button type="button" class="btn btn-success btn-sm col-xs-2" (click)="clickCatDesarrollo()">DESARROLLO</button>
+    <button type="button" class="btn btn-warning btn-sm col-xs-2" (click)="clickCatTi()">TECNOLOGIAS DE INFORMACIÓN</button>
+</div>
+<br><br>
+<app-curso-cat-container [tipCat]="tipCat"></app-curso-cat-container>

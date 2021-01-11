@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  urlApiInstructor: 'http://examen-nh.jcramireztello.com/api/v1/instructor',
+  urlApiCursoDestacado: 'http://examen-nh.jcramireztello.com/api/v1/course/?featured=true',
+  urlApiCursos: 'http://examen-nh.jcramireztello.com/api/v1/course/',
+  urlApiCursoCat: 'http://examen-nh.jcramireztello.com/api/v1/course/?category=',
 };
 
 /*

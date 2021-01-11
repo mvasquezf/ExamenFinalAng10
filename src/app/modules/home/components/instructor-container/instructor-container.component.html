@@ -1,1 +1,8 @@
-<app-instructor [instructor]="lisInstuctor" [coverWitdh]="300"></app-instructor>
+<span class="border">
+    <div style="text-align: center;">
+        <h1 class="display-3">INSTRUCTORES DESTACADOS</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-2">
+        <app-instructor *ngFor="let lst of lisInstuctor" [instructor]="lst" [coverWitdh]="300"></app-instructor>
+    </div>
+</span>

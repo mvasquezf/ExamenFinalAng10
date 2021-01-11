@@ -10,6 +10,7 @@ import { InstructorContainerComponent } from './components/instructor-container/
 import { InstructorComponent } from './components/instructor/instructor.component';
 import { CursoComponent } from 'src/app/shared/components/curso/curso.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { InstructorService } from './services/instructor.service';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
     CommonModule,
     HomeRoutingModule,
     SharedModule
-  ]
+  ],
+  providers: [InstructorService]
 })
 export class HomeModule { }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CursoDestacadoService } from '../../services/curso-destacado.service';
+import { ICurso } from 'src/app/shared/interfaces/curso';
 
 @Component({
   selector: 'app-cursos-destacado-container',
@@ -7,11 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursosDestacadoContainerComponent implements OnInit {
 
-  listCursoDestacado: any[] = [];
+  listCursoDestacado: ICurso[] = [];
 
-  constructor() { }
+  constructor(
+    private wsCursoDestacado: CursoDestacadoService
+  ) { }
 
   ngOnInit(): void {
+    this.getCursoDestacado();
+  }
+
+  getCursoDestacado() {
+    this.wsCursoDestacado.getCursoDestacado()
+      .subscribe((data: ICurso[]) => {
+        this.listCursoDestacado = data;
+      });
   }
 
 }
